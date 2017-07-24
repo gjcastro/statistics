@@ -1,21 +1,20 @@
 /******************************************************************************
- * Copyright (C) 2017 by Alex Fosdick - University of Colorado
+ * Copyright (C) 2017 by Gustavo Castro
  *
  * Redistribution, modification or use of this software in source or binary
  * forms is permitted as long as the files maintain this copyright. Users are 
  * permitted to modify this and use it to learn about the field of embedded
- * software. Alex Fosdick and the University of Colorado are not liable for any
- * misuse of this material. 
+ * software. Gustavo Castro is not liable for any misuse of this material.
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c
+ * @brief Implements statistics
  *
- * <Add Extended Description Here>
+ * This is for the week 1 assignment of embedded systems class @ Coursera
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Gustavo Castro
+ * @date Sunday, July 23, 2017
  *
  */
 
@@ -27,7 +26,7 @@
 /* Size of the Data Set */
 #define SIZE (40)
 
-void main() {
+int main() {
 
   unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
                               114, 88,   45,  76, 123,  87,  25,  23,
@@ -37,7 +36,49 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
+  return 0;
+}
+
+/* Implementation File Code */
+
+void print_statistics(){
 
 }
 
-/* Add other Implementation File Code Here */
+
+void print_array(unsigned char * data, int data_size){
+
+}
+
+
+unsigned char find_median(unsigned char * data, int data_size ){
+	unsigned char median=0;
+
+	return median;
+}
+
+
+unsigned char find_mean(unsigned char * data, int data_size ){
+	unsigned char mean=0;
+
+	return mean;
+}
+
+
+unsigned char find_maximum(unsigned char * data, int data_size ){
+	unsigned char max_value=0;
+
+	return max_value;
+}
+
+
+unsigned char find_minimum(unsigned char * data, int data_size ){
+	unsigned char min_value=0;
+
+	return min_value;
+}
+
+
+void sort_array(unsigned char * data, int data_size ){
+
+}
