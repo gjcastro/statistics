@@ -27,9 +27,15 @@
  *
  * Statistics include minimum, maximum, mean, and median.
  *
+ * @param minval is the minimum value
+ * @param maxval is the maximum value
+ * @param meanval is the mean value
+ * @param medval is the median value
+ *
  * @return void
  */
-void print_statistics();
+void print_statistics(unsigned char minval, unsigned char maxval,
+					  unsigned char meanval, unsigned char medval);
 
 /**
  * @brief prints the contents of the array 
@@ -100,5 +106,30 @@ unsigned char find_minimum(unsigned char * data, int data_size );
  * @return void
  */
 void sort_array(unsigned char * data, int data_size );
+
+/**
+ * @brief quick sort algorithm
+ *
+ * The array indicated by the pointers gets sorted in ascending order
+ *
+ * @param * left is the pointer to the beginning of the array
+ * @param * right is the pointer to the end of the array
+ *
+ * @return void
+ */
+void quick_sort(unsigned char * left, unsigned char * right );
+
+/**
+ * @brief splits the array around a pivot for sorting
+ *
+ * sort array calls on this function to split the array around the pivot
+ *
+ * @param * left is the pointer to the left side of the array
+ * @param * right is the pointer to the right side of the array
+ * @param * pivot is the pointer to the pivot of the array
+ *
+ * @return pointer to the right of the pivot
+ */
+unsigned char * split_array(unsigned char * left, unsigned char * right, unsigned char * pivot );
 
 #endif /* __STATS_H__ */
